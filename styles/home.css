@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Corinthia;
+  src: url(./assets/fonts/Corinthia-Regular.ttf);
+}
+
+@font-face {
+  font-family: InstrumentSans;
+  src: url(./assets/fonts/InstrumentSans-VariableFont_wdth\wght.ttf);
+}
+
+:root {
+  --background-color: linear-gradient(
+    180deg,
+    rgba(86, 102, 107, 0.84) 31%,
+    rgba(84, 133, 149, 0.84) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+  font-family: InstrumentSans, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-brand img {
+  width: 52px;
+  height: 52px;
+}
+
+h2 {
+  font-family: Corinthia;
+  font-size: 36px;
+  font-weight: normal;
+  padding-top: 8px;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav i {
+  color: black;
+  padding: 7px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: none;
+}
+
+nav i,
+.burger-menu {
+  margin-right: 16px;
+}
+
+.burger-menu {
+  width: 28px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-menu span {
+  width: 28px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #d9d9d9;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-brand img {
+    width: 118px;
+    height: 118px;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  nav i {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 32px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 32px;
+    gap: 40px;
+    padding: 0;
+  }
+
+  nav li {
+    font-size: 1.2rem;
+  }
+}
+
+/* main */
+main {
+  min-height: calc(100vh - 52px - 56px);
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    min-height: calc(100vh - 118px - 72px);
+  }
+}
+
+/* footer */
+footer {
+  height: 56px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+  color: black;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    height: 72px;
+  }
+}
