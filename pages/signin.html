@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild ToDo | Créer un compte</title>
+    <link rel="stylesheet" href="../styles/signin.css">
+    <link rel="icon" href="../assets/img/logo (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-brand">
+            <img src="../assets/img/logo.png" alt="Logo d'une ampoule idée sur post-it">
+            <h2>
+                Wild ToDo
+            </h2>
+        </div>
+        <nav class>
+            <i class="fa-solid fa-user"></i>
+            <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="#">Géré mes ToDo's</a></li>
+            </ul>
+            <div class="burger-menu">
+                <span></span><span></span><span></span>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <h1>Créer un compte</h1>
+        <section>
+            <form>
+                <ul>
+                    <li>
+                        <label for="username">Créer un identifiant *</label>
+                        <input id="username" type="text" placeholder="Identifiant..." required>
+                    </li>
+                    <li>
+                        <label for="e-mail">votre e-mail *</label>
+                        <input id="e-mail" type="email" placeholder="e-mail..." required>
+                    </li>
+                    <li>
+                        <label for="password">Créer un mot de passe *</label>
+                        <input id="password" type="password" placeholder="Mot de passe..." required>
+                    </li>
+                    <li>
+                        <label for="password">Confirmation de votre mot de passe *</label>
+                        <input id="password" type="password" placeholder="Mot de passe..." required>
+                    </li>
+
+
+
+                </ul>
+
+
+                <div>
+
+                    <button class="connecter">Créer mon compte</button>
+                    <p id="champs">* Champs obligatoires</p>
+
+                </div>
+            </form>
+
+            <p>En cliquant sur "Créer mon compte", vous acceptez :</p>
+            <a href="#">Les conditions générales d’utilisation</a>
+            <a href="#">La charte de confidentialité</a>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; WestDevs2025</p>
+    </footer>
+</body>
+
+</html>
