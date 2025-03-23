@@ -1,6 +1,6 @@
 @font-face {
   font-family: Corinthia;
-  src: url(./assets/fonts/Corinthia-Regular.ttf);
+  src: url(../assets/fonts/Corinthia-Regular.ttf);
 }
 
 @font-face {
@@ -246,8 +246,58 @@ div>p:last-of-type {
 @media screen and (min-width: 992px) {
   main {
     min-height: calc(100vh - 118px - 72px);
+    width: 90%;
+
+
   }
+
+
+
+  main h1 {
+    font-size: 3.3rem;
+    margin: 92px auto 0;
+
+
+
+  }
+
+
+
+
+  main li {
+    padding: 32px 0;
+
+  }
+
+  main label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: white;
+  }
+
+  main input {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    margin-left: 64px;
+  }
+
+
+  div p {
+    font-size: 1.1rem;
+  }
+
+  main div button {
+    padding: 16px 64px;
+    font-size: 1.5rem;
+
+
+
+  }
+
+
 }
+
 
 /* footer */
 footer {
