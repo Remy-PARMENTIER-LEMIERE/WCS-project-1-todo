@@ -134,25 +134,34 @@ main {
 main h1 {
     text-align: center;
     font-family: Corinthia;
-    font-size: 56px;
+    font-size: 64px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 992px) {
+    main h1 {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 992px) {
     main div {
         display: flex;
         justify-content: space-around;
+        padding-top: 48px;
     }
 }
-
-
 
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 24px;
+
 }
 
 article img {
+    margin-top: 16px;
     width: 40vw;
     height: 35vh;
     max-height: 242px;
@@ -164,8 +173,10 @@ article img {
 article h3 {
     text-align: center;
     font-family: Corinthia;
+    font-weight: normal;
     font-size: 48px;
-    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 @media screen and (min-width: 992px) {
