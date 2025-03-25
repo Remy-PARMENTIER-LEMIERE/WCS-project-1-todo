@@ -12,7 +12,11 @@
   --background-color: linear-gradient(180deg,
       rgba(86, 102, 107, 0.84) 31%,
       rgba(84, 133, 149, 0.84) 100%);
-  --shaddows: 8px 8px 8px rgba(0, 0, 0, 0.7)
+  --shaddows: 8px 8px 8px rgba(0, 0, 0, 0.7);
+  --most-buttons: linear-gradient(90deg,
+      rgba(115, 38, 99, 1) 0%,
+      rgba(142, 62, 110, 1) 55%,
+      rgba(187, 99, 152, 1) 90%);
 }
 
 * {
@@ -27,6 +31,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background: var(--background-color);
+
 }
 
 header {
@@ -121,52 +126,42 @@ nav i,
   }
 }
 
+
+
 /* main */
 main {
   display: flex;
   align-items: center;
-
-
   flex-direction: column;
   margin: 0 auto;
 
+
   width: 90%;
-  /* Occupe 90% de la largeur de la fenêtre */
   max-width: 400px;
-
-
   min-height: calc(100vh - 52px - 56px);
-
-
-
-  /* Ajoute un espace sous le contenu */
-
 }
-
-
-
-
 
 main h1 {
   font-family: InstrumentSans, sans-serif;
   font-size: 1.6rem;
   color: white;
-  margin: 32px auto 0;
+  margin: 64px auto;
 }
 
 main section {
   /* height: calc(100vh - 52px - 56px - 100px); */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-evenly; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-/* form { */
-display: flex;
-flex-direction: column;
-justify-content: center;
-/* flex: 0.8; */
-gap: 12%
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+
 }
 
 main section ul {
@@ -177,7 +172,7 @@ main section ul {
 }
 
 main section li {
-  margin: 24px 0;
+  margin-bottom: 32px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -185,100 +180,158 @@ main section li {
 
 main label {
   display: block;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  /* font-weight: bold; */
-  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-size: 1rem;
   color: white;
 }
 
 main input {
-  width: 70%;
+  width: 80%;
   align-self: center;
-  padding: 10px 12px;
+  padding: 12px 12px;
   border: 1px solid black;
   border-radius: 50px;
   font-size: 0.8rem;
   box-shadow: var(--shaddows);
 }
 
-#champs {
-  font-size: 0.6rem;
-}
 
-.general {
-  font-size: 0.4rem;
-}
 
 main button {
-
   padding: 12px 16px;
   margin-top: 32px;
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(295deg, rgba(61, 137, 173, 1) 0%, rgba(185, 227, 237, 1) 46%);
+  background-image: var(--most-buttons);
+  background-size: 180%;
+  background-position: right;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: var(--shaddows);
-
-  background-image: var(--most-buttons);
-  background-size: 180%;
-
-
-  cursor: pointer;
-
   transition: background-position 0.3s ease-in-out;
 
   &:hover {
-    background-position: right;
+    background-position: left;
   }
-
-
-
-
-
-
 }
 
-main button {
-  margin: 64px auto 0;
-  /* Ajoute une marge au-dessus, centre le bouton horizontalement */
-  display: block;
-  /* Garantit qu'il est centré par la propriété auto */
+section article {
+  margin: 48px auto;
 }
 
+section article>a {
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: underline;
+}
 
-
-
-div>p {
-  align-self: flex-start;
-  /* Conserve le paragraphe aligné à gauche */
+section article>p {
+  font-size: 0.8rem;
 }
 
 
-main article {
+div>p:first-of-type {
+  font-size: 0.6rem;
+}
 
-  font-size: 0.7rem;
-  margin-bottom: 32px;
-  margin-top: 32px;
+main div {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
+div>p:last-of-type {
 
-
+  font-size: 0.6rem;
+  text-decoration: underline;
+}
 
 
 @media screen and (min-width: 992px) {
   main {
     min-height: calc(100vh - 118px - 72px);
+    width: 90%;
+
+
+
   }
+
+
+
+  main h1 {
+    font-size: 3rem;
+    margin: 64px auto 64px;
+
+
+
+  }
+
+  main form ul {
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 300px;
+    gap: 0 100px;
+    justify-content: center;
+    margin-bottom: ;
+
+  }
+
+
+  main li {
+    padding: 8px 0;
+
+  }
+
+  main label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  main input {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    width: 400px;
+
+  }
+
+
+  div p {
+    font-size: 1.1rem;
+  }
+
+  main div button {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    margin: 64px auto 16px;
+    width: 50%;
+
+
+
+  }
+
+  article {
+    width: 50%;
+
+  }
+
+  article p:last-of-type {
+    color: black;
+  }
+
+  section article>a {
+    color: black;
+  }
+
+
 }
 
-@media screen and (min-width: 992px) {}
 
 /* footer */
 footer {
@@ -293,6 +346,8 @@ footer {
 footer p {
   color: black;
 }
+
+
 
 @media screen and (min-width: 992px) {
   footer {

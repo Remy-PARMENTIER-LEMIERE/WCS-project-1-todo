@@ -147,7 +147,7 @@ main h1 {
 }
 
 main section {
-  height: calc(100vh - 52px - 56px - 100px);
+  height: calc(100vh - 52px - 56px - 101px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -224,11 +224,10 @@ section>a {
 
 div p {
   font-size: 0.6rem;
+  align-items: center;
 }
 
-div>p:first-of-type {
-  margin-bottom: 8;
-}
+div>p:first-of-type {}
 
 main div {
   display: flex;
@@ -237,9 +236,10 @@ main div {
 }
 
 div>p:last-of-type {
-  margin-top: 8;
+  margin-top: 0;
   font-size: 0.9rem;
   text-decoration: underline;
+
 }
 
 
@@ -252,9 +252,12 @@ div>p:last-of-type {
   }
 
 
+  main section {
+    height: calc(100vh - 118px - 72px - 147px);
+  }
 
   main h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     margin: 92px auto 0;
 
 
@@ -279,19 +282,39 @@ div>p:last-of-type {
   main input {
     padding: 16px 32px;
     font-size: 1.1rem;
-    margin-left: 64px;
+    /* margin-left: 64px; */
+    align-self: unset;
+    width: 500px;
   }
 
+  form p:first-of-type {
+    font-size: 0.9rem;
+    text-align: end;
+  }
 
-  div p {
-    font-size: 1.1rem;
+  form p:last-of-type {
+    font-size: 1.2rem;
+
+
+  }
+
+  main section>a {
+    font-size: 2rem;
+    text-align: center;
   }
 
   main div button {
-    padding: 16px 64px;
-    font-size: 1.5rem;
+    padding: 12px 64px;
+    font-size: 1.6rem;
+    width: 300px;
 
 
+
+  }
+
+  main form button,
+  main form p:last-of-type {
+    align-self: end;
 
   }
 
