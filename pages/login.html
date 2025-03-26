@@ -1,91 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild ToDo | Se connecter</title>
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="icon" href="../assets/img/logo (1).ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wild ToDo | Se connecter</title>
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="icon" href="../assets/img/logo (1).ico">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
 
-<body>
-    <header>
-        <div class="logo-brand">
-            <img src="../assets/img/logo.png" alt="Logo d'une ampoule idée sur post-it">
-            <h2>
-                Wild ToDo
-            </h2>
-        </div>
-        <nav class="header-nav">
-            <i class="fa-solid fa-user"></i>
-            <ul>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Mon compte</a></li>
-                <li><a href="#">Gérer mes ToDo's</a></li>
-            </ul>
-            <div class="burger-menu">
-                <span></span><span></span><span></span>
+    <body>
+        <header>
+            <div class="logo-brand">
+                <img src="../assets/img/logo.png"
+                    alt="Logo d'une ampoule idée sur post-it">
+                <h2>
+                    Wild ToDo
+                </h2>
             </div>
-
-
-        </nav>
-
-    </header>
-    <main>
-        <h1>Se connecter</h1>
-        <section>
-            <form>
+            <nav class="header-nav">
+                <i class="fa-solid fa-user"></i>
                 <ul>
-                    <li>
-                        <label for="username">Votre identifiant *</label>
-                        <input id="username" type="text" placeholder="Identifiant..." required>
-                    </li>
-                    <li>
-                        <label for="password">Votre mot de passe *</label>
-                        <input id="confirmationPassword" type="password" placeholder="Mot de passe..." required>
-                    </li>
+                    <li><a href="./about.html">À propos</a></li>
+                    <li><a href="./login.html">Mon compte</a></li>
+                    <li><a href="#">Gérer mes ToDo's</a></li>
                 </ul>
-
-
-                <div>
-                    <p>* Champs obligatoires</p>
-                    <p><a href="#">Mot de passe oublié</a></p>
-                    <button type="submit" class="connecter">Me connecter</button>
+                <div class="burger-menu">
+                    <span></span><span></span><span></span>
                 </div>
-            </form>
-            <a href="#">Si vous n'êtes pas déjà inscrit :</a>
-        </section>
 
-        <div class="menu-container">
-            <nav class="menu-nav">
-                <ul>
-                    <li><a href="../pages/about.html">À propos</a></li>
-                    <li><a href="../pages/login.html"></a>Mon compte</li>
-                    <li>Gérer mes ToDo's</li>
-                </ul>
             </nav>
-            <div class="carroussel">
-                <!-- <div class="todo-list"></div> -->
+
+        </header>
+        <main>
+            <h1>Se connecter</h1>
+            <section>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="username">Votre identifiant *</label>
+                            <input id="username" type="text"
+                                placeholder="Identifiant..." required>
+                        </li>
+                        <li>
+                            <label for="password">Votre mot de passe *</label>
+                            <input id="confirmationPassword" type="password"
+                                placeholder="Mot de passe..." required>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <p>* Champs obligatoires</p>
+                        <p><a href="#">Mot de passe oublié</a></p>
+                        <button type="submit" class="connecter">Me
+                            connecter</button>
+                    </div>
+                </form>
+                <a href="./signin.html">Si vous n'êtes pas déjà inscrit :</a>
+            </section>
+
+            <div class="menu-container">
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="../pages/about.html">À propos</a></li>
+                        <li><a href="../pages/login.html"></a>Mon compte</li>
+                        <li>Gérer mes ToDo's</li>
+                    </ul>
+                </nav>
+                <div class="carroussel">
+                    <!-- <div class="todo-list"></div> -->
+                </div>
+                <div class="buttons">
+                    <button id="delete-button">Supprimer ce ToDo</button>
+                    <button id="create-button">Créer un ToDo</button>
+                    <a href="home.html">Conseils d'utilisation</a>
+                </div>
             </div>
-            <div class="buttons">
-                <button id="delete-button">Supprimer ce ToDo</button>
-                <button id="create-button">Créer un ToDo</button>
-                <a href="home.html">Conseils d'utilisation</a>
-            </div>
-        </div>
-    </main>
+        </main>
 
-
-
-    <footer>
-        <p>&copy; WestDevs2025</p>
-    </footer>
-    <script src="../scripts/menu.js"></script>
-    <script src="../assets/javascript/login.js"></script>
-</body>
+        <footer>
+            <p>&copy; WestDevs2025</p>
+        </footer>
+        <script src="../scripts/menu.js"></script>
+        <script src="../assets/javascript/login.js"></script>
+    </body>
 
 </html>
