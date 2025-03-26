@@ -14,6 +14,7 @@
       rgba(84, 133, 149, 0.84) 100%);
   --shaddows: 8px 8px 8px rgba(0, 0, 0, 0.7);
   --most-buttons: linear-gradient(169deg, rgba(214, 234, 238, 1) 0%, rgba(185, 227, 237, 1) 63%, rgba(61, 137, 173, 1) 100%);
+  --menu-background: #dbcdc6;
 }
 
 
@@ -56,23 +57,23 @@ h2 {
   margin: 0px;
 }
 
-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-nav i {
+.header-nav i {
   color: black;
   padding: 7px;
   background-color: #d9d9d9;
   border-radius: 50%;
 }
 
-nav ul {
+.header-nav ul {
   display: none;
 }
 
-nav i,
+.header-nav i,
 .burger-menu {
   margin-right: 16px;
 }
@@ -102,7 +103,7 @@ nav i,
     font-size: 64px;
   }
 
-  nav i {
+  .header-nav i {
     font-size: 1.5rem;
     padding: 10px;
     margin-right: 32px;
@@ -112,14 +113,14 @@ nav i,
     display: none;
   }
 
-  nav ul {
+  .header-nav ul {
     display: flex;
     margin-right: 32px;
     gap: 40px;
     padding: 0;
   }
 
-  nav li {
+  .header-nav li {
     font-size: 1.2rem;
   }
 }
@@ -131,12 +132,15 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  padding: 0.5%;
 
-
-  width: 90%;
-  max-width: 400px;
+  /* width: 90%; */
+  /* max-width: 400px; */
   min-height: calc(100vh - 52px - 56px);
+  /* Pour le menu */
+  position: relative;
+  overflow: hidden;
 }
 
 main h1 {
@@ -196,7 +200,7 @@ main input {
 
 
 
-main button {
+main .connecter {
   padding: 12px 16px;
   margin-top: 32px;
   font-size: 1.2rem;
@@ -252,7 +256,7 @@ div>p:last-of-type {
 @media screen and (min-width: 992px) {
   main {
     min-height: calc(100vh - 118px - 72px);
-    width: 90%;
+    /* width: 90%; */
 
 
 
@@ -276,12 +280,12 @@ div>p:last-of-type {
     height: 300px;
     gap: 0 100px;
     justify-content: center;
-    margin-bottom: ;
+    /* margin-bottom: ; */
 
   }
 
 
-  main li {
+  main section li {
     padding: 8px 0;
 
   }
@@ -305,7 +309,7 @@ div>p:last-of-type {
     font-size: 1.1rem;
   }
 
-  main div button {
+  main div .connecter {
     padding: 16px 32px;
     font-size: 1.5rem;
     margin: 64px auto 16px;
@@ -351,5 +355,98 @@ footer p {
 @media screen and (min-width: 992px) {
   footer {
     height: 72px;
+  }
+}
+
+/* MENU */
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  background-color: var(--menu-background);
+  width: 92%;
+  height: 350px;
+  border-radius: 12px;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(55vw);
+
+  & * {
+    color: rgba(0, 0, 0, 0.781);
+  }
+}
+
+.menu-nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.95rem;
+}
+
+.carroussel {
+  height: 180px;
+}
+
+.todo-list {
+  background-image: var(--todo-cards);
+  height: 160px;
+  width: 115px;
+  border-radius: 12px;
+  font-family: Corinthia;
+}
+
+.buttons {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.buttons button {
+  background-image: var(--most-buttons);
+  background-size: 180%;
+  background-position: right;
+  transition: 0.3s ease-in-out;
+  border: none;
+  padding: 8px 16px;
+  box-shadow: var(--smaller-shadows);
+  border-radius: 16px;
+  color: white;
+
+  & :focus {
+    background-position: left;
+  }
+}
+
+.open-menu {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 992px) {
+  .menu-container {
+    width: 600px;
+    height: 400px;
+    left: unset;
+    right: 32px;
+    transform: translateX(700px);
+  }
+
+  .carroussel {
+    height: 220px;
+  }
+
+  .open-menu {
+    transform: translateX(0);
   }
 }
