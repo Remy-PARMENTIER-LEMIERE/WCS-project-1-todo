@@ -20,7 +20,7 @@
                 Wild ToDo
             </h2>
         </div>
-        <nav class>
+        <nav class="header-nav">
             <i class="fa-solid fa-user"></i>
             <ul>
                 <li><a href="#">A propos</a></li>
@@ -37,7 +37,7 @@
 
     <main>
         <h1>La Team</h1>
-        <div>
+        <div class="article-box">
             <article>
                 <img src="../assets/img/leila_photo_project.png" alt="photo de Leïla">
                 <h3>Leïla</h3>
@@ -64,10 +64,29 @@
             </article>
         </div>
 
+        <div class="menu-container">
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="../pages/about.html">À propos</a></li>
+                    <li><a href="../pages/login.html"></a>Mon compte</li>
+                    <li>Gérer mes ToDo's</li>
+                </ul>
+            </nav>
+            <div class="carroussel">
+                <!-- <div class="todo-list"></div> -->
+            </div>
+            <div class="buttons">
+                <button id="delete-button">Supprimer ce ToDo</button>
+                <button id="create-button">Créer un ToDo</button>
+                <a href="home.html">Conseils d'utilisation</a>
+            </div>
+        </div>
+
     </main>
     <footer>
         <p>&copy; WestDevs2025</p>
     </footer>
+    <script src="../scripts/menu.js"></script>
 </body>
 
 </html>
