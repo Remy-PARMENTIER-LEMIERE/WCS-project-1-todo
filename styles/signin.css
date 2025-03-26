@@ -13,11 +13,9 @@
       rgba(86, 102, 107, 0.84) 31%,
       rgba(84, 133, 149, 0.84) 100%);
   --shaddows: 8px 8px 8px rgba(0, 0, 0, 0.7);
-  --most-buttons: linear-gradient(90deg,
-      rgba(115, 38, 99, 1) 0%,
-      rgba(142, 62, 110, 1) 55%,
-      rgba(187, 99, 152, 1) 90%);
+  --most-buttons: linear-gradient(169deg, rgba(214, 234, 238, 1) 0%, rgba(185, 227, 237, 1) 63%, rgba(61, 137, 173, 1) 100%);
 }
+
 
 * {
   box-sizing: border-box;
@@ -193,6 +191,7 @@ main input {
   border-radius: 50px;
   font-size: 0.8rem;
   box-shadow: var(--shaddows);
+  color: black;
 }
 
 
