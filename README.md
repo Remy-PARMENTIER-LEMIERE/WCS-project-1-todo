@@ -1,5 +1,6 @@
 # WCS-project-1-todo
 
+
 ## Vérifier que les roots ressemble à ça :
 
 :root {
@@ -21,3 +22,4 @@ rgba(187, 99, 152, 1) 90%
 );
 --shadows: 8px 8px 10px rgba(12, 12, 13, 0.77);
 }
+
