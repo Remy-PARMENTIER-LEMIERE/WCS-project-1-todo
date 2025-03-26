@@ -17,6 +17,7 @@
       rgba(115, 38, 99, 1) 0%,
       rgba(142, 62, 110, 1) 55%,
       rgba(187, 99, 152, 1) 90%);
+  --menu-background: #dbcdc6;
 }
 
 * {
@@ -58,23 +59,23 @@ h2 {
   margin: 0px;
 }
 
-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-nav i {
+.header-nav i {
   color: black;
   padding: 7px;
   background-color: #d9d9d9;
   border-radius: 50%;
 }
 
-nav ul {
+.header-nav ul {
   display: none;
 }
 
-nav i,
+.header-nav i,
 .burger-menu {
   margin-right: 16px;
 }
@@ -104,7 +105,7 @@ nav i,
     font-size: 64px;
   }
 
-  nav i {
+  .header-nav i {
     font-size: 1.5rem;
     padding: 10px;
     margin-right: 32px;
@@ -114,14 +115,14 @@ nav i,
     display: none;
   }
 
-  nav ul {
+  .header-nav ul {
     display: flex;
     margin-right: 32px;
     gap: 40px;
     padding: 0;
   }
 
-  nav li {
+  .header-nav li {
     font-size: 1.2rem;
   }
 }
@@ -133,11 +134,17 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 400px;
+  /* margin: 0 auto; */
+  align-items: center;
+  /* width: 90%; */
+  padding: 0.5%;
+  /* max-width: 400px; */
   min-height: calc(100vh - 52px - 56px);
+  /* Pour le menu */
+  position: relative;
+  overflow: hidden;
 }
+
 
 main h1 {
   font-family: InstrumentSans, sans-serif;
@@ -195,7 +202,7 @@ main input {
 
 
 
-main button {
+main .connecter {
   padding: 12px 16px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -228,7 +235,7 @@ div p {
   align-items: center;
 }
 
-div>p:first-of-type {}
+
 
 main div {
   display: flex;
@@ -247,7 +254,7 @@ div>p:last-of-type {
 @media screen and (min-width: 992px) {
   main {
     min-height: calc(100vh - 118px - 72px);
-    width: 90%;
+    /* width: 90%; */
 
 
   }
@@ -268,7 +275,7 @@ div>p:last-of-type {
 
 
 
-  main li {
+  main section li {
     padding: 32px 0;
 
   }
@@ -304,7 +311,7 @@ div>p:last-of-type {
     text-align: center;
   }
 
-  main div button {
+  main div .connecter {
     padding: 12px 64px;
     font-size: 1.6rem;
     width: 300px;
@@ -340,5 +347,98 @@ footer p {
 @media screen and (min-width: 992px) {
   footer {
     height: 72px;
+  }
+}
+
+/* MENU */
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  background-color: var(--menu-background);
+  width: 92%;
+  height: 350px;
+  border-radius: 12px;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(55vw);
+
+  & * {
+    color: rgba(0, 0, 0, 0.781);
+  }
+}
+
+.menu-nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.95rem;
+}
+
+.carroussel {
+  height: 180px;
+}
+
+.todo-list {
+  background-image: var(--todo-cards);
+  height: 160px;
+  width: 115px;
+  border-radius: 12px;
+  font-family: Corinthia;
+}
+
+.buttons {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.buttons button {
+  background-image: var(--most-buttons);
+  background-size: 180%;
+  background-position: right;
+  transition: 0.3s ease-in-out;
+  border: none;
+  padding: 8px 16px;
+  box-shadow: var(--smaller-shadows);
+  border-radius: 16px;
+  color: white;
+
+  & :focus {
+    background-position: left;
+  }
+}
+
+.open-menu {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 992px) {
+  .menu-container {
+    width: 600px;
+    height: 400px;
+    left: unset;
+    right: 32px;
+    transform: translateX(700px);
+  }
+
+  .carroussel {
+    height: 220px;
+  }
+
+  .open-menu {
+    transform: translateX(0);
   }
 }

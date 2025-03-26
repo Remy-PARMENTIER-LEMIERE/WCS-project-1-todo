@@ -20,7 +20,7 @@
                 Wild ToDo
             </h2>
         </div>
-        <nav class>
+        <nav class="header-nav">
             <i class="fa-solid fa-user"></i>
             <ul>
                 <li><a href="#">À propos</a></li>
@@ -31,7 +31,7 @@
                 <span></span><span></span><span></span>
             </div>
 
-            j
+
         </nav>
 
     </header>
@@ -59,30 +59,33 @@
             </form>
             <a href="#">Si vous n'êtes pas déjà inscrit :</a>
         </section>
-    </main>
-    <div class="logo-brand">
-        <img src="../assets/img/logo.png" alt="Logo d'une ampoule idée sur post-it">
-        <h2>
-            Wild ToDo
-        </h2>
-    </div>
-    <nav class>
-        <i class="fa-solid fa-user"></i>
-        <ul>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Mon compte</a></li>
-            <li><a href="#">Géré mes ToDo's</a></li>
-        </ul>
-        <div class="burger-menu">
-            <span></span><span></span><span></span>
+
+        <div class="menu-container">
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="../pages/about.html">À propos</a></li>
+                    <li><a href="../pages/login.html"></a>Mon compte</li>
+                    <li>Gérer mes ToDo's</li>
+                </ul>
+            </nav>
+            <div class="carroussel">
+                <!-- <div class="todo-list"></div> -->
+            </div>
+            <div class="buttons">
+                <button id="delete-button">Supprimer ce ToDo</button>
+                <button id="create-button">Créer un ToDo</button>
+                <a href="home.html">Conseils d'utilisation</a>
+            </div>
         </div>
+    </main>
 
 
-        </script>
-        <footer>
-            <p>&copy; WestDevs2025</p>
-        </footer>
-        <script src="../assets/javascript/login.js"></script>
+
+    <footer>
+        <p>&copy; WestDevs2025</p>
+    </footer>
+    <script src="../scripts/menu.js"></script>
+    <script src="../assets/javascript/login.js"></script>
 </body>
 
 </html>
