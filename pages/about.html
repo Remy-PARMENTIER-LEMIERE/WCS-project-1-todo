@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="../styles/main-application.css">
+        <link rel="stylesheet" href="../styles/about.css">
         <link rel="icon" href="../assets/img/logo (1).ico">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -22,12 +22,12 @@
                     Wild ToDo
                 </h2>
             </div>
-            <nav class>
+            <nav class="header-nav">
                 <i class="fa-solid fa-user"></i>
                 <ul>
                     <li><a href="./about.html">A propos</a></li>
                     <li><a href="./login.html">Mon compte</a></li>
-                    <li><a href="#">Géré mes ToDo's</a></li>
+                    <li><a href="#">Gérer mes ToDo's</a></li>
                 </ul>
                 <div class="burger-menu">
                     <span></span><span></span><span></span>
@@ -36,32 +36,44 @@
             </nav>
 
         </header>
+
         <main>
-            <section>
-                <img src="../assets/img/white-cross.png"
-                    alt="Supprimer la todo" id="delete-full-list">
-                <h3>Titre de la ToDo</h3>
-                <input type="text" placeholder="Choississez un titre...">
-                <ul>
-
-                    <li>Première ToDo
-                        <span>
-                            <img
-                                src="../assets/img/check.png"
-                                alt="Valider la todo">
-                            <img
-                                src="../assets/img/checked.png"
-                                alt="La todo est validée">
-                            <img id="delete-todo"
-                                src="../assets/img/white-cross.png"
-                                alt="Supprimer la ToDo">
-                        </span>
-                    </li>
-
-                </ul>
-                <img src="../assets/img/share-logo.png" alt="share button"
-                    id="share-list">
-            </section>
+            <h1>La Team</h1>
+            <div class="article-box">
+                <article>
+                    <img src="../assets/img/leila_photo_project.png"
+                        alt="photo de Leïla">
+                    <h3>Leïla</h3>
+                    <p>“ Passionnée de développement web, j'organise mes projets
+                        de travail grâce à ma To-Do pour un avenir
+                        serein en France ou ailleurs. “</p>
+                </article>
+                <article>
+                    <img src="../assets/img/mohammed_photo_project.jpeg"
+                        alt="photo de Mohammed">
+                    <h3>Mohamed</h3>
+                    <p>“ En tant que développeur web junior, j'ai crée une to-do
+                        list pour gérer mes tâches quotidiennes et
+                        mes projets, elle m'aide à structurer mes journées de
+                        manière claire et efficace.”</p>
+                </article>
+                <article>
+                    <img src="../assets/img/remy_photo_project.jpg"
+                        alt=" photo de Rémy">
+                    <h3>Rémy</h3>
+                    <p>“ Développeur junior, j'ai eu besoin d'organiser mon
+                        travail. De cette nécessité est née le projet
+                        Wild ToDo ! ”</p>
+                </article>
+                <article>
+                    <img src="../assets/img/romain_photo_project.jpg"
+                        alt="photo de Romain">
+                    <h3>Romain</h3>
+                    <p>“En tant que futur développeur, j'adore acquérir de
+                        nouvelles compétences, et découvrir les nouvelles
+                        technologies.”</p>
+                </article>
+            </div>
 
             <div class="menu-container">
                 <nav class="menu-nav">
@@ -80,6 +92,7 @@
                     <a href="home.html">Conseils d'utilisation</a>
                 </div>
             </div>
+
         </main>
         <footer>
             <p>&copy; WestDevs2025</p>

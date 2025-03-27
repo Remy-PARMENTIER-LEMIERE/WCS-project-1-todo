@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../styles/main-application.css">
+        <title>Wild ToDo | Se connecter</title>
+        <link rel="stylesheet" href="../styles/login.css">
         <link rel="icon" href="../assets/img/logo (1).ico">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -22,12 +22,12 @@
                     Wild ToDo
                 </h2>
             </div>
-            <nav class>
+            <nav class="header-nav">
                 <i class="fa-solid fa-user"></i>
                 <ul>
-                    <li><a href="./about.html">A propos</a></li>
+                    <li><a href="./about.html">À propos</a></li>
                     <li><a href="./login.html">Mon compte</a></li>
-                    <li><a href="#">Géré mes ToDo's</a></li>
+                    <li><a href="#">Gérer mes ToDo's</a></li>
                 </ul>
                 <div class="burger-menu">
                     <span></span><span></span><span></span>
@@ -37,30 +37,30 @@
 
         </header>
         <main>
+            <h1>Se connecter</h1>
             <section>
-                <img src="../assets/img/white-cross.png"
-                    alt="Supprimer la todo" id="delete-full-list">
-                <h3>Titre de la ToDo</h3>
-                <input type="text" placeholder="Choississez un titre...">
-                <ul>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="username">Votre identifiant *</label>
+                            <input id="username" type="text"
+                                placeholder="Identifiant..." required>
+                        </li>
+                        <li>
+                            <label for="password">Votre mot de passe *</label>
+                            <input id="confirmationPassword" type="password"
+                                placeholder="Mot de passe..." required>
+                        </li>
+                    </ul>
 
-                    <li>Première ToDo
-                        <span>
-                            <img
-                                src="../assets/img/check.png"
-                                alt="Valider la todo">
-                            <img
-                                src="../assets/img/checked.png"
-                                alt="La todo est validée">
-                            <img id="delete-todo"
-                                src="../assets/img/white-cross.png"
-                                alt="Supprimer la ToDo">
-                        </span>
-                    </li>
-
-                </ul>
-                <img src="../assets/img/share-logo.png" alt="share button"
-                    id="share-list">
+                    <div>
+                        <p>* Champs obligatoires</p>
+                        <p><a href="#">Mot de passe oublié</a></p>
+                        <button type="submit" class="connecter">Me
+                            connecter</button>
+                    </div>
+                </form>
+                <a href="./signin.html">Si vous n'êtes pas déjà inscrit :</a>
             </section>
 
             <div class="menu-container">
@@ -81,10 +81,12 @@
                 </div>
             </div>
         </main>
+
         <footer>
             <p>&copy; WestDevs2025</p>
         </footer>
         <script src="../scripts/menu.js"></script>
+        <script src="../assets/javascript/login.js"></script>
     </body>
 
 </html>

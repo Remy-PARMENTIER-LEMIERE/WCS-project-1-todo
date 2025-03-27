@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Wild ToDo | Acceuil</title>
         <link rel="stylesheet" href="../styles/home.css">
         <link rel="icon" href="../assets/img/logo (1).ico">
         <link rel="stylesheet"
@@ -15,33 +15,68 @@
 
     <body>
         <header>
-            <div class="logo-brand">
-                <img src="../assets/img/logo.png"
-                    alt="Logo d'une ampoule idée sur post-it">
-                <h2>
-                    Wild ToDo
-                </h2>
-            </div>
-            <nav class>
+            <nav class="header-nav">
                 <i class="fa-solid fa-user"></i>
                 <ul>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Mon compte</a></li>
-                    <li><a href="#">Géré mes ToDo's</a></li>
+                    <li><a href="./about.html">À propos</a></li>
+                    <li><a href="./login.html">Mon compte</a></li>
+                    <li><a href="#">Gérer mes ToDo's</a></li>
                 </ul>
                 <div class="burger-menu">
                     <span></span><span></span><span></span>
                 </div>
 
             </nav>
-
         </header>
-        <main>
 
+        <main>
+            <div class="logo-brand">
+                <img src="../assets/img/logo.png"
+                    alt="Logo d'une ampoule idée sur post-it">
+                <h2>Wild ToDo</h2>
+            </div>
+            <section>
+                <h3>Bienvenue sur <strong>Wild ToDo !</strong></h3>
+                <img src="../assets/img/screenshot-app.png"
+                    alt="Screenshot pour un exemple de ToDo List">
+                <article>
+                    <p>Ce site interatif vous permet de vous souvenir des choses
+                        importantes.</p>
+                    <p>Créez une ToDo List à partir du menu <em>Gérer mes
+                            ToDo's</em> ou du bouton ci-dessous.</p>
+                    <p>Votre première entrée définira le nom de la liste.</p>
+                    <p>Ensuite vous n'avez plus qu'à saisir vos tâches.</p>
+                    <p>À vous de jouer !</p>
+                </article>
+                <a href="./main-application.html">Créer une ToDo
+                    <img src="../assets/img/blue-arrow.png"
+                        alt="Simple flèche bleu" class="blue-arrow">
+                </a>
+            </section>
+
+            <div class="menu-container">
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="../pages/about.html">À propos</a></li>
+                        <li><a href="../pages/login.html"></a>Mon compte</li>
+                        <li>Gérer mes ToDo's</li>
+                    </ul>
+                </nav>
+                <div class="carroussel">
+                    <!-- <div class="todo-list"></div> -->
+                </div>
+                <div class="buttons">
+                    <button id="delete-button">Supprimer ce ToDo</button>
+                    <button id="create-button">Créer un ToDo</button>
+                    <a href="home.html">Conseils d'utilisation</a>
+                </div>
+            </div>
         </main>
+
         <footer>
-            <p>&copy; WestDevs2025</p>
+            <p>&copy; WestDevs 2025</p>
         </footer>
+        <script src="../scripts/menu.js"></script>
     </body>
 
 </html>
