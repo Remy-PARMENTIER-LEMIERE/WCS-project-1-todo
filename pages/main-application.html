@@ -37,11 +37,32 @@
 
         </header>
         <main>
+            <div class="menu-container">
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="../pages/about.html">À propos</a></li>
+                        <li><a href="../pages/login.html"></a>Mon compte</li>
+                        <li>Gérer mes ToDo's</li>
+                    </ul>
+                </nav>
+                <div class="carroussel">
+                    <!-- <div class="todo-list"></div> -->
+                </div>
+                <div class="buttons">
+                    <button id="delete-button">Supprimer ce ToDo</button>
+                    <button id="create-button">Créer un ToDo</button>
+                    <a href="home.html">Conseils d'utilisation</a>
+                </div>
+            </div>
+
             <section>
                 <img src="../assets/img/white-cross.png"
                     alt="Supprimer la todo" id="delete-full-list">
                 <h3>Titre de la ToDo</h3>
-                <input type="text" placeholder="Choississez un titre...">
+                <form>
+                    <input type="text" placeholder="Choississez un titre...">
+                    <button type="submit"></button>
+                </form>
                 <ul>
 
                     <li>Première ToDo
@@ -63,23 +84,6 @@
                     id="share-list">
             </section>
 
-            <div class="menu-container">
-                <nav class="menu-nav">
-                    <ul>
-                        <li><a href="../pages/about.html">À propos</a></li>
-                        <li><a href="../pages/login.html"></a>Mon compte</li>
-                        <li>Gérer mes ToDo's</li>
-                    </ul>
-                </nav>
-                <div class="carroussel">
-                    <!-- <div class="todo-list"></div> -->
-                </div>
-                <div class="buttons">
-                    <button id="delete-button">Supprimer ce ToDo</button>
-                    <button id="create-button">Créer un ToDo</button>
-                    <a href="home.html">Conseils d'utilisation</a>
-                </div>
-            </div>
         </main>
         <footer>
             <p>&copy; WestDevs2025</p>

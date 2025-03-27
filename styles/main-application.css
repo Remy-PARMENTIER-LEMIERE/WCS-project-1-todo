@@ -170,11 +170,24 @@ h3 {
   margin: 8px 0;
   max-width: 80%;
 }
-
+section form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 section input {
   width: 180px;
   height: 28px;
   font-size: 0.9rem;
+  margin-right: 20px;
+}
+
+section button {
+  clip-path: polygon(0 10%, 100% 50%, 0 90%, 30% 50%);
+  background-color: #49acfd;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
 }
 
 main section ul {
