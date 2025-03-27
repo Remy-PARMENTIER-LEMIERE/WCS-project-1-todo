@@ -50,14 +50,16 @@
                 </div>
                 <div class="buttons">
                     <button id="delete-button">Supprimer ce ToDo</button>
-                    <button id="create-button">Créer un ToDo</button>
+                    <button class="create-button">Créer un ToDo</button>
                     <a href="home.html">Conseils d'utilisation</a>
                 </div>
             </div>
 
-            <section>
+            <button class="create-button">Créer ma première ToDo List</button>
+
+            <section id="original-card">
                 <img src="../assets/img/white-cross.png"
-                    alt="Supprimer la todo" id="delete-full-list">
+                    alt="Supprimer la todo" class="delete-full-list">
                 <h3>Titre de la ToDo</h3>
                 <form>
                     <input type="text" placeholder="Choississez un titre...">
@@ -67,13 +69,13 @@
 
                     <li>Première ToDo
                         <span>
-                            <img
+                            <img class="check-todo"
                                 src="../assets/img/check.png"
                                 alt="Valider la todo">
-                            <img
+                            <img class="checked-todo"
                                 src="../assets/img/checked.png"
                                 alt="La todo est validée">
-                            <img id="delete-todo"
+                            <img class="delete-todo"
                                 src="../assets/img/white-cross.png"
                                 alt="Supprimer la ToDo">
                         </span>
@@ -89,6 +91,7 @@
             <p>&copy; WestDevs2025</p>
         </footer>
         <script src="../scripts/menu.js"></script>
+        <script src="../scripts/cards.js"></script>
     </body>
 
 </html>
