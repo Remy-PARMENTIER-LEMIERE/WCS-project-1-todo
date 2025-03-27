@@ -1,36 +1,56 @@
-// function validate() {
-//     const passwordInput = document.querySelector("#password"); // Champ de confirmation du mot de passe
-//     const messageDisplay = document.createElement("div"); // Élément pour afficher les messages dynamiques
-//     passwordInput.parentElement.appendChild(messageDisplay); // Ajouter le message sous le champ
 
-//     // Ajouter un écouteur d'événement sur la saisie dans le champ mot de passe
-//     passwordInput.addEventListener("input", () => {
-//         const passwordValue = passwordInput.value; // Récupérer la valeur du mot de passe
 
-//         // Vérifier les critères du mot de passe
-//         const hasNumber = /[0-9]/.test(passwordValue); // Au moins 1 chiffre
-//         const hasUppercase = /[A-Z]/.test(passwordValue); // Au moins 1 majuscule
-//         const hasLowercase = /[a-z]/.test(passwordValue); // Au moins 1 minuscule
-//         const hasSpecialChar = /[^a-zA-Z\d]/.test(passwordValue); // Au moins 1 caractère spécial
-//         const hasMinLength = passwordValue.length >= 10; // Longueur minimale de 10 caractères
 
-//         // Afficher le message selon la validité du mot de passe
-//         if (hasNumber && hasUppercase && hasLowercase && hasSpecialChar && hasMinLength) {
-//             messageDisplay.innerHTML = "<p style='color:green'>Mot de passe fort.</p>";
-//         } else {
-//             messageDisplay.innerHTML = "<p style='color:red'>Mot de passe faible.</p>";
-//         }
-//     });
-// }
-const inputPassword = document.querySelector("#password");
-const confirmationPassword = document.querySelector("#confirmationPassword");
-const form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    if (inputPassword.value === confirmationPassword.value) {
-        alert("Valid Password");
+
+const inputUsername = document.querySelector("#username");
+const inputEmail = document.querySelector("#e-mail");
+const inputCreatePassword = document.querySelector("#password");
+const inputConfirmationPassword = document.querySelector("#confirmationPassword");
+const button = document.querySelector(".connecter");
+
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+
+
+    inputCreatePassword.style.border = "1px solid black";
+    inputConfirmationPassword.style.border = "1px solid black";
+    inputEmail.style.border = "1px solid black";
+    inputUsername.style.border = "1px solid black";
+
+
+    // Vérification des champs vides
+    if (!inputCreatePassword.value.trim() || !inputConfirmationPassword.value.trim() || !inputUsername.value.trim() || !inputEmail.value.trim()) {
+        if (!inputCreatePassword.value.trim()) {
+            inputCreatePassword.style.border = "2px solid red";
+        }
+        if (!inputConfirmationPassword.value.trim()) {
+            inputConfirmationPassword.style.border = "2px solid red";
+        }
+        if (!inputUsername.value.trim()) {
+            inputUsername.style.border = "2px solid red";
+        }
+        if (!inputEmail.value.trim()) {
+            inputEmail.style.border = "2px solid red";
+        }
+        alert("Veuillez remplir tous les champs obligatoires !");
+        return;
+    } else if (inputCreatePassword.value !== inputConfirmationPassword.value) {
+
+        inputCreatePassword.style.border = "2px solid red";
+        inputConfirmationPassword.style.border = "2px solid red";
+        alert("Les mots de passe ne correspondent pas !");
+        return;
     } else {
-        alert("Invalid Password");
+        // Si tout est valide
+        inputCreatePassword.style.border = "2px solid green";
+        inputConfirmationPassword.style.border = "2px solid green";
+        inputUsername.style.border = "2px solid green";
+        inputEmail.style.border = "2px solid green";
+        alert("Compte créé avec succès !");
+        return;
     }
-})
+});
+
+
+
 
