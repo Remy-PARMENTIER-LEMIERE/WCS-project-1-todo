@@ -35,26 +35,6 @@
 
     </header>
     <main>
-        <section>
-            <img src="../assets/img/white-cross.png" alt="Supprimer la todo" id="delete-full-list">
-            <h3>Titre de la ToDo</h3>
-            <input type="text" placeholder="Choississez un titre...">
-            <ul id="my-list">
-                <li>Première ToDo
-                    <span>
-                        <img src="../assets/img/check.png" alt="Valider la todo">
-                        <img src="../assets/img/checked.png" alt="La todo est validée">
-                        <img id="delete-todo" src="../assets/img/white-cross.png" alt="Supprimer la ToDo">
-                    </span>
-                </li>
-            </ul>
-
-
-
-
-            <img src="../assets/img/share-logo.png" alt="share button" id="share-list">
-        </section>
-
         <div class="menu-container">
             <nav class="menu-nav">
                 <ul>
@@ -72,12 +52,33 @@
                 <a href="home.html">Conseils d'utilisation</a>
             </div>
         </div>
+
+        <section>
+            <img src="../assets/img/white-cross.png" alt="Supprimer la todo" id="delete-full-list">
+            <h3>Titre de la ToDo</h3>
+            <form>
+                <input type="text" placeholder="Choississez un titre...">
+                <button type="submit"></button>
+            </form>
+            <ul>
+
+                <li>Première ToDo
+                    <span>
+                        <img src="../assets/img/check.png" alt="Valider la todo">
+                        <img src="../assets/img/checked.png" alt="La todo est validée">
+                        <img id="delete-todo" src="../assets/img/white-cross.png" alt="Supprimer la ToDo">
+                    </span>
+                </li>
+
+            </ul>
+            <img src="../assets/img/share-logo.png" alt="share button" id="share-list">
+        </section>
+
     </main>
     <footer>
         <p>&copy; WestDevs2025</p>
     </footer>
     <script src="../scripts/menu.js"></script>
-    <script src="../scripts/list-creation.js"></script>
 </body>
 
 </html>
