@@ -155,6 +155,7 @@ main > button {
   border: none;
   box-shadow: var(--shadows);
   font-size: 1rem;
+  cursor: pointer;
 }
 
 main section {
@@ -166,6 +167,7 @@ main section {
   margin: 24px auto 0;
   min-height: 70vh;
   border-radius: 16px;
+  box-shadow: var(--shadows);
 }
 
 .focused-card {
@@ -312,14 +314,44 @@ footer p {
 
 .carroussel {
   height: 180px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  gap: 0.5rem;
+  scroll-snap-type: x proximity;
+  padding: 0.5rem;
 }
 
 .todo-list {
   background-image: var(--todo-cards);
   height: 160px;
+  min-width: 115px;
   width: 115px;
   border-radius: 12px;
   font-family: Corinthia;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow: var(--smaller-shadows);
+  border: 2px solid transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.focused-menu-card {
+  border: 2px solid white;
+}
+
+.todo-list h4 {
+  font-size: 2rem;
+  font-family: Corinthia;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
 
 .buttons {
@@ -346,6 +378,7 @@ footer p {
   box-shadow: var(--smaller-shadows);
   border-radius: 16px;
   color: white;
+  cursor: pointer;
 
   & :focus {
     background-position: left;
