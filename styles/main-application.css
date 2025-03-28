@@ -9,23 +9,17 @@
 }
 
 :root {
-  --background-color: linear-gradient(
-    180deg,
-    rgba(86, 102, 107, 0.84) 31%,
-    rgba(84, 133, 149, 0.84) 100%
-  );
-  --todo-cards: linear-gradient(
-    180deg,
-    rgba(142, 62, 110, 1) 26%,
-    rgba(187, 99, 152, 1) 80%
-  );
+  --background-color: linear-gradient(180deg,
+      rgba(86, 102, 107, 0.84) 31%,
+      rgba(84, 133, 149, 0.84) 100%);
+  --todo-cards: linear-gradient(180deg,
+      rgba(142, 62, 110, 1) 26%,
+      rgba(187, 99, 152, 1) 80%);
   --menu-background: #dbcdc6;
-  --most-buttons: linear-gradient(
-    90deg,
-    rgba(115, 38, 99, 1) 0%,
-    rgba(142, 62, 110, 1) 55%,
-    rgba(187, 99, 152, 1) 90%
-  );
+  --most-buttons: linear-gradient(90deg,
+      rgba(115, 38, 99, 1) 0%,
+      rgba(142, 62, 110, 1) 55%,
+      rgba(187, 99, 152, 1) 90%);
   --shadows: 8px 8px 10px rgba(12, 12, 13, 0.77);
   --smaller-shadows: 5px 5px 10px rgba(12, 12, 13, 0.55);
 }
@@ -159,10 +153,12 @@ main section {
 section img {
   width: 16px;
 }
+
 #delete-full-list {
   align-self: flex-end;
   margin: 16px 16px 0 0;
 }
+
 h3 {
   font-family: Corinthia;
   font-size: 2.8rem;
@@ -170,11 +166,13 @@ h3 {
   margin: 8px 0;
   max-width: 80%;
 }
+
 section form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 section input {
   width: 180px;
   height: 28px;
@@ -225,17 +223,20 @@ main section li img:nth-child(2) {
   margin-top: auto;
   margin: 8px;
   width: 24px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
   main {
     min-height: calc(100vh - 118px - 72px);
   }
+
   main section {
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
   }
+
   main section ul {
     padding-top: 16px;
   }
@@ -344,9 +345,11 @@ footer p {
     right: 32px;
     transform: translateX(700px);
   }
+
   .carroussel {
     height: 220px;
   }
+
   .open-menu {
     transform: translateX(0);
   }
