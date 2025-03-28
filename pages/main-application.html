@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wild ToDo | Mes ToDo's</title>
-        <link rel="stylesheet" href="../styles/main-application.css">
-        <link rel="icon" href="../assets/img/logo (1).ico">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild ToDo | Mes ToDo's</title>
+    <link rel="stylesheet" href="../styles/main-application.css">
+    <link rel="icon" href="../assets/img/logo (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <body>
-        <header>
-            <div class="logo-brand">
-                <img src="../assets/img/logo.png"
-                    alt="Logo d'une ampoule idée sur post-it">
-                <h2>
-                    Wild ToDo
-                </h2>
+<body>
+    <header>
+        <div class="logo-brand">
+            <img src="../assets/img/logo.png" alt="Logo d'une ampoule idée sur post-it">
+            <h2>
+                Wild ToDo
+            </h2>
+        </div>
+        <nav class>
+            <i class="fa-solid fa-user"></i>
+            <ul>
+                <li><a href="./about.html">A propos</a></li>
+                <li><a href="./login.html">Mon compte</a></li>
+                <li><a href="#">Géré mes ToDo's</a></li>
+            </ul>
+            <div class="burger-menu">
+                <span></span><span></span><span></span>
             </div>
-            <nav class>
-                <i class="fa-solid fa-user"></i>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="menu-container">
+            <nav class="menu-nav">
                 <ul>
-                    <li><a href="./about.html">A propos</a></li>
-                    <li><a href="./login.html">Mon compte</a></li>
-                    <li><a href="#">Géré mes ToDo's</a></li>
+                    <li><a href="../pages/about.html">À propos</a></li>
+                    <li><a href="../pages/login.html"></a>Mon compte</li>
+                    <li>Gérer mes ToDo's</li>
                 </ul>
-                <div class="burger-menu">
-                    <span></span><span></span><span></span>
-                </div>
-
             </nav>
-
-        </header>
-        <main>
-            <div class="menu-container">
-                <nav class="menu-nav">
-                    <ul>
-                        <li><a href="../pages/about.html">À propos</a></li>
-                        <li><a href="../pages/login.html"></a>Mon compte</li>
-                        <li>Gérer mes ToDo's</li>
-                    </ul>
-                </nav>
-                <div class="carroussel">
-                    <!-- <div class="todo-list"></div>
+            <div class="carroussel">
+                <!-- <div class="todo-list"></div>
                     <div class="todo-list"></div>
                     <div class="todo-list"></div>
                     <div class="todo-list"></div>
                     <div class="todo-list"></div>
                     <div class="todo-list"></div>
                     <div class="todo-list"></div> -->
-                </div>
-                <div class="buttons">
-                    <button id="delete-button">Supprimer ce ToDo</button>
-                    <button class="create-button">Créer un ToDo</button>
-                    <a href="home.html">Conseils d'utilisation</a>
-                </div>
             </div>
+            <div class="buttons">
+                <button id="delete-button">Supprimer ce ToDo</button>
+                <button class="create-button">Créer un ToDo</button>
+                <a href="home.html">Conseils d'utilisation</a>
+            </div>
+        </div>
 
-            <button class="create-button">Créer ma première ToDo List</button>
+        <button class="create-button">Créer ma première ToDo List</button>
 
-            <section id="original-card">
-                <img src="../assets/img/white-cross.png"
-                    alt="Supprimer la todo" class="delete-full-list">
-                <h3>Titre de la ToDo</h3>
-                <form>
-                    <input type="text" placeholder="Choississez un titre...">
-                    <button type="submit"></button>
-                </form>
-                <ul>
+        <section id="original-card">
+            <img src="../assets/img/white-cross.png" alt="Supprimer la todo" class="delete-full-list">
+            <h3>Titre de la ToDo</h3>
+            <form>
+                <input type="text" placeholder="Choississez un titre...">
+                <button type="submit"></button>
+            </form>
+            <ul>
 
-                    <li>Première ToDo
-                        <span>
-                            <img class="check-todo"
-                                src="../assets/img/check.png"
-                                alt="Valider la todo">
-                            <img class="checked-todo"
-                                src="../assets/img/checked.png"
-                                alt="La todo est validée">
-                            <img class="delete-todo"
-                                src="../assets/img/white-cross.png"
-                                alt="Supprimer la ToDo">
-                        </span>
-                    </li>
+                <li>Première ToDo
+                    <span>
+                        <img class="check-todo" src="../assets/img/check.png" alt="Valider la todo">
+                        <img class="checked-todo" src="../assets/img/checked.png" alt="La todo est validée">
+                        <img class="delete-todo" src="../assets/img/white-cross.png" alt="Supprimer la ToDo">
+                    </span>
+                </li>
 
-                </ul>
-                <img src="../assets/img/share-logo.png" alt="share button"
-                    id="share-list">
-            </section>
+            </ul>
+            <img src="../assets/img/share-logo.png" alt="share button" id="share-list">
+        </section>
 
-        </main>
-        <footer>
-            <p>&copy; WestDevs2025</p>
-        </footer>
-        <script src="../scripts/menu.js"></script>
-        <script src="../scripts/cards.js"></script>
-    </body>
+    </main>
+    <footer>
+        <p>&copy; WestDevs2025</p>
+    </footer>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/cards.js"></script>
+</body>
 
 </html>
