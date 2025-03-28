@@ -158,7 +158,7 @@ main section {
   flex-direction: column;
   align-items: center;
   width: 92%;
-  margin: 24px auto 0;
+  margin: 24px auto 20px;
   min-height: 70vh;
   border-radius: 16px;
   box-shadow: var(--shadows);
@@ -257,7 +257,7 @@ main section li img:nth-child(2) {
   main section {
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   main section ul {
