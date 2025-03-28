@@ -8,3 +8,9 @@ burgerMenu.addEventListener("click", () => {
 toDosManagement.addEventListener("click", () => {
   menu.classList.toggle("open-menu");
 });
+
+const changePage = document.getElementById("create-button-not-application");
+
+changePage.addEventListener("click", () => {
+  window.location.href = "main-application.html";
+});

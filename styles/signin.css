@@ -15,6 +15,10 @@
   --shaddows: 8px 8px 8px rgba(0, 0, 0, 0.7);
   --most-buttons: linear-gradient(169deg, rgba(214, 234, 238, 1) 0%, rgba(185, 227, 237, 1) 63%, rgba(61, 137, 173, 1) 100%);
   --menu-background: #dbcdc6;
+  --menu-most-buttons: linear-gradient(90deg,
+      rgba(115, 38, 99, 1) 0%,
+      rgba(142, 62, 110, 1) 55%,
+      rgba(187, 99, 152, 1) 90%);
 }
 
 
@@ -196,6 +200,7 @@ main input {
   font-size: 0.8rem;
   box-shadow: var(--shaddows);
   color: black;
+  transition: border 0.3s ease;
 }
 
 
@@ -257,7 +262,8 @@ div>p:last-of-type {
   main {
     min-height: calc(100vh - 118px - 72px);
     /* width: 90%; */
-
+    /* flex-grow: 1; */
+    justify-content: center;
 
 
   }
@@ -314,6 +320,7 @@ div>p:last-of-type {
     font-size: 1.5rem;
     margin: 64px auto 16px;
     width: 50%;
+    color: black;
 
 
 
@@ -413,7 +420,7 @@ footer p {
 }
 
 .buttons button {
-  background-image: var(--most-buttons);
+  background-image: var(--menu-most-buttons);
   background-size: 180%;
   background-position: right;
   transition: 0.3s ease-in-out;
@@ -422,6 +429,7 @@ footer p {
   box-shadow: var(--smaller-shadows);
   border-radius: 16px;
   color: white;
+
 
   & :focus {
     background-position: left;

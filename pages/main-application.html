@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wild ToDo | Mes ToDo's</title>
     <link rel="stylesheet" href="../styles/main-application.css">
     <link rel="icon" href="../assets/img/logo (1).ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -44,29 +44,37 @@
                 </ul>
             </nav>
             <div class="carroussel">
-                <!-- <div class="todo-list"></div> -->
+                <!-- <div class="todo-list"></div>
+                    <div class="todo-list"></div>
+                    <div class="todo-list"></div>
+                    <div class="todo-list"></div>
+                    <div class="todo-list"></div>
+                    <div class="todo-list"></div>
+                    <div class="todo-list"></div> -->
             </div>
             <div class="buttons">
                 <button id="delete-button">Supprimer ce ToDo</button>
-                <button id="create-button">Créer un ToDo</button>
+                <button class="create-button">Créer un ToDo</button>
                 <a href="home.html">Conseils d'utilisation</a>
             </div>
         </div>
 
-        <section>
-            <img src="../assets/img/white-cross.png" alt="Supprimer la todo" id="delete-full-list">
+        <button class="create-button">Créer ma première ToDo List</button>
+
+        <section id="original-card">
+            <img src="../assets/img/white-cross.png" alt="Supprimer la todo" class="delete-full-list">
             <h3>Titre de la ToDo</h3>
             <form>
                 <input type="text" placeholder="Choississez un titre...">
                 <button type="submit"></button>
             </form>
-            <ul id="my-list">
+            <ul>
 
                 <li>Première ToDo
                     <span>
-                        <img src="../assets/img/check.png" alt="Valider la todo">
-                        <img src="../assets/img/checked.png" alt="La todo est validée">
-                        <img id="delete-todo" src="../assets/img/white-cross.png" alt="Supprimer la ToDo">
+                        <img class="check-todo" src="../assets/img/check.png" alt="Valider la todo">
+                        <img class="checked-todo" src="../assets/img/checked.png" alt="La todo est validée">
+                        <img class="delete-todo" src="../assets/img/white-cross.png" alt="Supprimer la ToDo">
                     </span>
                 </li>
 
@@ -79,7 +87,7 @@
         <p>&copy; WestDevs2025</p>
     </footer>
     <script src="../scripts/menu.js"></script>
-    <script src="../scripts/list-creation.js"></script>
+    <script src="../scripts/cards.js"></script>
 </body>
 
 </html>
