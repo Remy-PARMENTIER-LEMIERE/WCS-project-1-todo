@@ -345,6 +345,7 @@ footer p {
   box-shadow: var(--smaller-shadows);
   border-radius: 16px;
   color: white;
+  cursor: pointer;
 
   & :focus {
     background-position: left;

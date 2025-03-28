@@ -1,7 +1,6 @@
 // const myList = document.querySelector("#my-list");
 // const newLi = document.createElement("li");
 
-
 // const newInput = document.createElement("input");
 // newInput.type = "text";
 // newInput.placeholder = "Ajouter une tâche";
@@ -9,12 +8,10 @@
 // newLi.appendChild(newInput);
 // myList.appendChild(newLi);
 
-const shareButton = document.getElementById("share-list");
+const main = document.querySelector("main");
 
-shareButton.addEventListener("click", share)
-
-function share() {
+main.addEventListener("click", (event) => {
+  if (event.target.className.includes("share-list")) {
     alert("Veuillez vous connecter avant de pouvoir partager");
-}
-
-
+  }
+});

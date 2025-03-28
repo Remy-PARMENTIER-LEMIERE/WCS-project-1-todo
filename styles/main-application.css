@@ -241,7 +241,7 @@ main section li img:nth-child(2) {
   display: none;
 }
 
-#share-list {
+.share-list {
   align-self: flex-start;
   margin-top: auto;
   margin: 8px;
@@ -340,6 +340,7 @@ footer p {
   border: 2px solid transparent;
   transition: 0.3s;
   cursor: pointer;
+  margin: 0;
 }
 
 .focused-menu-card {
