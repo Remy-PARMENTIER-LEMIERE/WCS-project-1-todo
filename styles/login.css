@@ -255,18 +255,21 @@ div>p:last-of-type {
   main {
     min-height: calc(100vh - 118px - 72px);
     /* width: 90%; */
+    justify-content: space-evenly;
 
 
   }
 
 
   main section {
-    height: calc(100vh - 118px - 72px - 147px);
+    /* height: calc(100vh - 118px - 72px - 147px); */
+    height: unset;
+    flex: 0.7;
   }
 
   main h1 {
     font-size: 3rem;
-    margin: 92px auto 0;
+    margin: 0 auto;
 
 
 
@@ -276,14 +279,14 @@ div>p:last-of-type {
 
 
   main section li {
-    padding: 32px 0;
+    padding: 0;
 
   }
 
   main label {
     display: block;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
   }
 
@@ -293,6 +296,11 @@ div>p:last-of-type {
     /* margin-left: 64px; */
     align-self: unset;
     width: 500px;
+  }
+
+  form {
+    gap: 0;
+    flex: unset;
   }
 
   form p:first-of-type {
@@ -307,7 +315,7 @@ div>p:last-of-type {
   }
 
   main section>a {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
   }
 
