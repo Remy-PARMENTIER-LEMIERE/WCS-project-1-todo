@@ -66,25 +66,30 @@ cardsContainer.addEventListener("submit", (e) => {
     todos.appendChild(newLi);
     input.value = "";
   }
+
+  // STYLE ADJUSTMENT ON CARROUSSEL RELATIVE TO SCREEN WIDTH
+
+  const menuCardsQuantity = Array.from(
+    document.querySelector(".carroussel").children
+  ).length;
+
+  if (window.innerWidth < 992) {
+    if (menuCardsQuantity <= 2) {
+      menuCardsContainer.style.justifyContent = "center";
+      menuCardsContainer.style.gap = "2rem";
+    } else {
+      menuCardsContainer.style.justifyContent = "unset";
+      menuCardsContainer.style.gap = "0.5rem";
+    }
+  } else {
+    if (menuCardsQuantity <= 4) {
+      menuCardsContainer.style.justifyContent = "center";
+      menuCardsContainer.style.gap = "2rem";
+    } else {
+      menuCardsContainer.style.justifyContent = "unset";
+    }
+  }
 });
-
-// STYLE ADJUSTMENT ON CARROUSSEL RELATIVE TO SCREEN WIDTH
-
-const menuCardsQuantity = Array.from(
-  document.querySelector(".carroussel").children
-).length;
-
-if (window.innerWidth < 992) {
-  if (menuCardsQuantity <= 2) {
-    menuCardsContainer.style.justifyContent = "center";
-    menuCardsContainer.style.gap = "2rem";
-  }
-} else {
-  if (menuCardsQuantity <= 4) {
-    menuCardsContainer.style.justifyContent = "center";
-    menuCardsContainer.style.gap = "2rem";
-  }
-}
 
 // DELETE, CHECK & UNCHECK EACH TODO
 // ALSO DELETE CARD AND MENU CARD ON CARD CROSS CLICK
